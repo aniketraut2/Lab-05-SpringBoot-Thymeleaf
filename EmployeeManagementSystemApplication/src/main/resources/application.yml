@@ -1,0 +1,21 @@
+info:
+  project:
+    env: local
+    instructor: ANIKET RAUT
+    name: Employee Management
+    team: com.greatLearning
+management:
+  endpoints:
+    web:
+      exposure:
+        include: metrics , info , health
+spring:
+  datasource:
+    driverClassName: org.h2.Driver
+    password: 1234
+    url: jdbc:h2:mem:EmployeeDB
+    username: admin
+  h2:
+    console:
+      enabled: true
+      path: /h2
